@@ -20,7 +20,17 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
-
+<!-- Google Analytics tracking code -->
+<script>
+  import { GA_MEASUREMENT_ID } from '../config';
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', GA_MEASUREMENT_ID);
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id="+GA_MEASUREMENT_ID></script>
+<!-- End Google Analytics tracking code -->
   
   </head>
 
